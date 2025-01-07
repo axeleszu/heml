@@ -2,7 +2,7 @@
   "name": "heml",
   "displayName": "heml",
   "description": "Email HTML",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "engines": {
     "vscode": "^1.96.0"
   },
