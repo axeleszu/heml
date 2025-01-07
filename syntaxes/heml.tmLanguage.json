@@ -16,7 +16,7 @@
 			"patterns": [
 				{
 					"name": "entity.name.tag.heml",
-					"match": "</?\\b(heml|head|body|container|row|column|font|button|p|h1|h2|h3|h4|h5|h6|ul|ol|li|strong|em|s|u|small)\\b"
+					"match": "</?\\b(heml|head|y|body|container|row|column|font|button|p|h1|h2|h3|h4|h5|h6|ul|ol|li|strong|em|s|u|small|img|br|a|div|subject|style)\\b"
 				},
 				{
 					"name": "entity.name.tag.heml-ignored",
@@ -52,6 +52,22 @@
 							"match": "-->"
 						}
 					]
+				}
+			]
+		},
+		"head-tags": {
+			"patterns": [
+				{
+					"name": "entity.name.tag.heml.head",
+					"match": "</?\\b(subject|style)\\b"
+				}
+			]
+		},
+		"body-tags": {
+			"patterns": [
+				{
+					"name": "entity.name.tag.heml.body",
+					"match": "</?\\b(img|br|a|div|button)\\b"
 				}
 			]
 		}
