@@ -1,0 +1,34 @@
+{
+  "name": "heml",
+  "displayName": "heml",
+  "description": "Email HTML",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "heml",
+        "aliases": [
+          "HELM",
+          "heml"
+        ],
+        "extensions": [
+          ".heml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "heml",
+        "scopeName": "email.heml",
+        "path": "./syntaxes/heml.tmLanguage.json"
+      }
+    ]
+  }
+}

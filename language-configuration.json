@@ -1,0 +1,226 @@
+{
+    "comments": {
+        "lineComment": "<!--",
+        "blockComment": {
+            "begin": "<!--",
+            "end": "-->"
+        }
+    },
+    "brackets": [
+        [
+            "<heml>",
+            "</heml>"
+        ],
+        [
+            "<head>",
+            "</head>"
+        ],
+        [
+            "<body>",
+            "</body>"
+        ],
+        [
+            "<container>",
+            "</container>"
+        ],
+        [
+            "<row>",
+            "</row>"
+        ],
+        [
+            "<column>",
+            "</column>"
+        ],
+        [
+            "<font>",
+            "</font>"
+        ],
+        [
+            "<button>",
+            "</button>"
+        ],
+        [
+            "<p>",
+            "</p>"
+        ],
+        [
+            "<h1>",
+            "</h1>"
+        ],
+        [
+            "<h2>",
+            "</h2>"
+        ],
+        [
+            "<h3>",
+            "</h3>"
+        ],
+        [
+            "<h4>",
+            "</h4>"
+        ],
+        [
+            "<h5>",
+            "</h5>"
+        ],
+        [
+            "<h6>",
+            "</h6>"
+        ],
+        [
+            "<ul>",
+            "</ul>"
+        ],
+        [
+            "<ol>",
+            "</ol>"
+        ],
+        [
+            "<li>",
+            "</li>"
+        ]
+    ],
+    "autoClosingPairs": [
+        {
+            "open": "<heml>",
+            "close": "</heml>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<head>",
+            "close": "</head>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<body>",
+            "close": "</body>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<container>",
+            "close": "</container>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<row>",
+            "close": "</row>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<column>",
+            "close": "</column>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<font>",
+            "close": "</font>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<button>",
+            "close": "</button>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<p>",
+            "close": "</p>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<h1>",
+            "close": "</h1>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<h2>",
+            "close": "</h2>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<h3>",
+            "close": "</h3>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<h4>",
+            "close": "</h4>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<h5>",
+            "close": "</h5>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<h6>",
+            "close": "</h6>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<ul>",
+            "close": "</ul>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<ol>",
+            "close": "</ol>",
+            "notIn": [
+                "comment"
+            ]
+        },
+        {
+            "open": "<li>",
+            "close": "</li>",
+            "notIn": [
+                "comment"
+            ]
+        }
+    ],
+    "folding": {
+        "markers": {
+            "start": "^<!--\\s*?folding-start\\s*-->",
+            "end": "^<!--\\s*?folding-end\\s*-->"
+        }
+    },
+    "onEnterRules": [
+        {
+            "beforeText": "^\\s*</?(heml|head|body|container|row|column|font|button|p|h1|h2|h3|h4|h5|h6|ul|ol|li)>",
+            "afterText": "^\\s*<$",
+            "action": {
+                "indentAction": "indent"
+            }
+        }
+    ]
+}

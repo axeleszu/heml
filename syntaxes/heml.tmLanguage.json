@@ -1,0 +1,63 @@
+{
+	"scopeName": "source.heml",
+	"patterns": [
+		{
+			"include": "#tags"
+		},
+		{
+			"include": "#attributes"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"tags": {
+			"patterns": [
+				{
+					"name": "entity.name.tag.heml",
+					"match": "</?\\b(heml|head|body|container|row|column|font|button|p|h1|h2|h3|h4|h5|h6|ul|ol|li|strong|em|s|u|small)\\b"
+				},
+				{
+					"name": "entity.name.tag.heml-ignored",
+					"match": "<button heml-ignore\\b[^>]*>.*?</button>"
+				}
+			]
+		},
+		"attributes": {
+			"patterns": [
+				{
+					"name": "entity.other.attribute-name.heml",
+					"match": "(large|small|href|style|font|color|text|padding|display|background|border|box-shadow)"
+				},
+				{
+					"name": "string.quoted.double.heml",
+					"match": "\"(.*?)\""
+				},
+				{
+					"name": "string.quoted.single.heml",
+					"match": "'(.*?)'"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.heml",
+					"begin": "<!--",
+					"end": "-->",
+					"patterns": [
+						{
+							"name": "punctuation.definition.comment.heml",
+							"match": "-->"
+						}
+					]
+				}
+			]
+		}
+	},
+	"fileTypes": [
+		"heml"
+	],
+	"uuid": "1A0D9B5F-4D4C-4F0D-9B0D-5F4D4C4F0D9B"
+}
